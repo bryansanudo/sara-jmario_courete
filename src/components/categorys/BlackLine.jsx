@@ -10,6 +10,7 @@ import product3 from "@/assets/categorys/blackLine/product3.jpg";
 import product4 from "@/assets/categorys/blackLine/product4.jpg";
 import product5 from "@/assets/categorys/blackLine/product5.jpg";
 import blackLineVideo from "@/assets/categorys/blackLine/blackLine.mp4";
+import Navigate from "@/components/categorys/Navigate";
 
 const BlackLine = () => {
   const portfolios = [
@@ -62,60 +63,7 @@ const BlackLine = () => {
     >
       <div className="w-full bg-gradient-to-b from-gray-800 to-black text-white">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
-          <div className="flex  flex-col p-5 gap-5 items-center justify-center ">
-            <Link to="/">
-              <div className="flex flex-col w-full md:flex-row justify-center items-center md:gap-8 rounded-full shadow-lg shadow-white hover:scale-105 duration-200 px-12 p-3 cursor-pointer ">
-                <div className="flex gap-4">
-                  <img
-                    src={logoJmario}
-                    alt="contact us"
-                    className="rounded-full object-cover w-9 h-9 shadow-lg shadow-thOrange   "
-                  />
-                  <AiFillFire size={40} className="text-white" />
-                </div>
-                <p>Producto 1</p>
-              </div>
-            </Link>
-            <Link to="/producto2">
-              <div className="flex flex-col w-full md:flex-row justify-center items-center md:gap-8 rounded-full shadow-lg shadow-[#5a979a] hover:scale-105 duration-200 px-12 p-3 cursor-pointer ">
-                <div className="flex gap-4">
-                  <img
-                    src={logoJmario}
-                    alt="contact us"
-                    className="rounded-full object-cover w-9 h-9 shadow-lg shadow-thOrange   "
-                  />
-                  <AiFillExperiment size={40} className="text-[#5a979a]" />
-                </div>
-                <p>Producto 2</p>
-              </div>
-            </Link>
-            <Link to="/producto3">
-              <div className="flex flex-col w-full md:flex-row justify-center items-center md:gap-8 rounded-full shadow-lg shadow-[#8fbbeb] hover:scale-105 duration-200 px-12 p-3 cursor-pointer ">
-                <div className="flex gap-4">
-                  <img
-                    src={logoJmario}
-                    alt="contact us"
-                    className="rounded-full object-cover w-9 h-9 shadow-lg shadow-thOrange   "
-                  />
-                  <AiFillExperiment size={40} className="text-[#8fbbeb]" />
-                </div>
-                <p>Producto 3</p>
-              </div>
-            </Link>
-            <Link to="/producto4">
-              <div className="flex flex-col w-full md:flex-row justify-center items-center md:gap-8 rounded-full shadow-lg shadow-[#0627ce] hover:scale-105 duration-200 px-12 p-3 cursor-pointer ">
-                <div className="flex gap-4">
-                  <img
-                    src={logoJmario}
-                    alt="contact us"
-                    className="rounded-full object-cover w-9 h-9 shadow-lg shadow-thOrange   "
-                  />
-                  <AiFillExperiment size={40} className="text-[#0627ce]" />
-                </div>
-                <p>Producto 4</p>
-              </div>
-            </Link>
-          </div>
+          <Navigate />
           <div className="grid gap-8 md:px-12 grid-cols-1 sm:grid-cols-2  lg:grid-cols-2">
             <div className="rounded-lg shadow-lg shadow-white duration-200 hover:scale-105">
               <a href="" target="_blank" rel="noreferrer">
@@ -127,7 +75,7 @@ const BlackLine = () => {
                     type="video/mp4"
                     playsInline
                     muted
-                    className="h-[330px] md:h-[500px]  w-full  object-cover "
+                    className="h-[330px] md:h-[500px]  w-full  object-cover rounded-t-xl "
                   />
                   <p className="m-4 capitalize text-sm md:text-lg">
                     @jmario_couture
@@ -144,7 +92,7 @@ const BlackLine = () => {
                   <div className="flex flex-col items-center justify-center">
                     <img
                       src={src}
-                      className="h-[330px] md:h-[500px]  w-full  object-cover "
+                      className="h-[330px] md:h-[500px]  w-full  object-cover rounded-t-xl "
                     />
                     <p className="m-4 capitalize text-sm md:text-lg">
                       {category}
