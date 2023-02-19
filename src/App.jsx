@@ -8,6 +8,9 @@ import Home from "@/components/categorys/Home";
 import BlackLine from "@/components/categorys/BlackLine";
 import GreenLine from "@/components/categorys/GreenLine";
 import BlueLine from "@/components/categorys/BlueLine";
+import PinkLine from "@/components/categorys/PinkLine";
+import OrangeLine from "@/components/categorys/OrangeLine";
+import WhiteLine from "@/components/categorys/WhiteLine";
 function App() {
   const [isMenuShown, setIsMenuShown] = useState(false);
 
@@ -19,9 +22,12 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/producto1" element={<BlackLine />} />
-          <Route path="/producto2" element={<GreenLine />} />
-          <Route path="/producto3" element={<BlueLine />} />
+          <Route path="/producto1" element={<PinkLine />} />
+          <Route path="/producto2" element={<OrangeLine />} />
+          <Route path="/producto3" element={<WhiteLine />} />
+          <Route path="/producto4" element={<GreenLine />} />
+          <Route path="/producto5" element={<BlackLine />} />
+          <Route path="/producto6" element={<BlueLine />} />
         </Routes>
       </BrowserRouter>
     </>

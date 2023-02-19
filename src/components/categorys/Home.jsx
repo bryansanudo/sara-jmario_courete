@@ -135,7 +135,7 @@ const Home = () => {
       name="portafolio"
       title="¡Bienvenidos a J MARIO COUTURE! "
       subtitle={`
-      Estás buscando el vestido de baño perfecto para disfrutar del sol y el agua? Nuestros vestidos de baño son muy cómodos y duraderos ¡No esperes más y compra tu vestido de baño ahora! Mira nuestra amplia selección de estilos y tallas.`}
+      ¿Estás buscando el vestido de baño perfecto para disfrutar del sol y el agua? Nuestros vestidos de baño son muy cómodos y duraderos ¡No esperes más y compra tu vestido de baño ahora! Mira nuestra amplia selección de estilos y tallas.`}
     >
       <div className="w-full bg-gradient-to-b from-gray-800 to-black text-white">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
@@ -179,44 +179,7 @@ const Home = () => {
                 </div>
               </div>
             </div>
-            <div className="rounded-lg shadow-lg shadow-thSecondary group">
-              <div className="flex flex-col items-center justify-center">
-                <video
-                  autoPlay
-                  src={video1}
-                  loop
-                  type="video/mp4"
-                  playsInline
-                  muted
-                  className="h-[330px] md:h-[500px]  w-full  object-cover rounded-t-xl"
-                />
-                <p className="m-4 capitalize text-sm md:text-lg">Título</p>
-                <div className="flex gap-5">
-                  <p>S-M-L-XL</p>
-                  <p>$$$</p>
-                </div>
-                <div className="m-4 capitalize text-sm md:text-lg flex items-center justify-center gap-5">
-                  <article className="group-hover:scale-125 duration-300">
-                    <a
-                      href="https://www.instagram.com/p/Cc8hcCaFeDfxTU2HaD6gyfwPSFT3Kpg5ZljInU0/"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <IconInstagram />
-                    </a>
-                  </article>
-                  <article className="group-hover:scale-125 duration-300">
-                    <a
-                      href="https://api.whatsapp.com/send?phone=3043300238"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <IconWpp />
-                    </a>
-                  </article>
-                </div>
-              </div>
-            </div>
+
             {portfolios.map(({ id, src, codeInstagram, category, codeWpp }) => (
               <div
                 key={id}
