@@ -8,6 +8,7 @@ import product4 from "@/assets/categorys/greenLine/product4.jpg";
 import product5 from "@/assets/categorys/greenLine/product5.jpg";
 import blackLineVideo from "@/assets/categorys/greenLine/greenLine.mp4";
 import Navigate from "@/components/categorys/Navigate";
+import IconInstagram from "@/icons/IconInstagram";
 
 const GreenLine = () => {
   const portfolios = [
@@ -51,12 +52,9 @@ const GreenLine = () => {
   return (
     <PageSection
       name="portafolio"
-      title="Titulo Producto 1"
+      title="¡Bienvenidos a J MARIO COUTURE! "
       subtitle={`
-    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-    Dignissimos sunt enim eum possimus, culpa veritatis hic aspernatur
-    numquam ducimus exercitationem fuga nemo consequatur odit
-    laudantium voluptate facilis veniam perferendis pariatur?`}
+      Estás buscando el vestido de baño perfecto para disfrutar del sol y el agua? Nuestros vestidos de baño son muy cómodos y duraderos ¡No esperes más y compra tu vestido de baño ahora! Mira nuestra amplia selección de estilos y tallas.`}
     >
       <div className="w-full bg-gradient-to-b from-gray-800 to-black text-white">
         <div className="mx-auto flex h-full w-full max-w-screen-lg flex-col justify-center p-4 ">
@@ -74,9 +72,17 @@ const GreenLine = () => {
                     muted
                     className="h-[330px] md:h-[500px]  w-full  object-cover rounded-t-xl "
                   />
-                  <p className="m-4 capitalize text-sm md:text-lg">
-                    @jmario_couture
-                  </p>
+                  <p className="m-4 capitalize text-sm md:text-lg">Título</p>
+                  <div className="flex gap-5">
+                    <p>S-M-L-XL</p>
+                    <p>$$$</p>
+                  </div>
+                  <div className="m-4 capitalize text-sm md:text-lg flex items-center justify-center gap-2">
+                    <article>
+                      <IconInstagram />
+                    </article>
+                    <article>jmario_couture</article>
+                  </div>
                 </div>
               </a>
             </div>
@@ -94,7 +100,17 @@ const GreenLine = () => {
                     <p className="m-4 capitalize text-sm md:text-lg">
                       {category}
                     </p>
-                    <p className="m-4 text-sm md:text-lg">{brand}</p>
+                    <div className="flex gap-5">
+                      <p>S-M-L-XL</p>
+                      <p>$$$</p>
+                    </div>
+
+                    <div className="m-4 capitalize text-sm md:text-lg flex items-center justify-center gap-2">
+                      <article>
+                        <IconInstagram />
+                      </article>
+                      <article>jmario_couture</article>
+                    </div>
                   </div>
                 </a>
               </div>
