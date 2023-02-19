@@ -15,7 +15,6 @@ import product11 from "@/assets/categorys/saraHome/product11.jpg";
 import product12 from "@/assets/categorys/saraHome/product12.jpg";
 import product13 from "@/assets/categorys/saraHome/product13.jpg";
 
-import video1 from "@/assets/categorys/saraHome/video1.mp4";
 import video2 from "@/assets/categorys/saraHome/video2.mp4";
 
 import Navigate from "@/components/categorys/Navigate";
